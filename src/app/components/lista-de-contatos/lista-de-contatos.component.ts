@@ -12,40 +12,40 @@ export class ListaDeContatosComponent implements OnInit {
     {
       nome:"Jessica Pereira",
       email: "florjess@teste.com",
-      telefones: ["55555-5555"]
+      telefones: ["55555-5555"],
     },
     {
-      nome:"Jessica Pereira",
+      nome:"Groot",
       email: "florjess31@teste.com",
       telefones: ["32222-5555"]
     },
     {
-      nome:"Jessica Pereira",
+      nome:"Dr. Estranho",
       email: "florjess31@teste.com",
       telefones: ["44444-5555"]
     },
     {
-      nome:"Jessica Pereira",
+      nome:"Cosima",
       email: "florjess31@teste.com",
       telefones: ["11111-5555"]
     },
     {
-      nome:"Jessica Pereira",
+      nome:"João Nascimento",
       email: "florjess31@teste.com",
       telefones: ["99999-5555"]
     },
     {
-      nome:"Jessica Pereira",
+      nome:"Fernanda Souza",
       email: "florjess31@teste.com",
       telefones: ["22222-5555"]
     },
     {
-      nome:"Jessica Pereira",
+      nome:"Mariah Pereira",
       email: "florjess31@teste.com",
       telefones: ["48545-5555"]
     },
     {
-      nome:"Jessica Pereira",
+      nome:"Bruna Pereira",
       email: "florjess31@teste.com",
       telefones: ["44848-5555"]
     },
