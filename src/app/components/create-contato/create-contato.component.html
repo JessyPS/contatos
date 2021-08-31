@@ -16,16 +16,16 @@
             </div>
             <div>
                 <input type="email" name="email" id="email">
-                <a class="remove" href=""><i class="material-icons">remove_circle</i></a>
+                <a class="remove"><i class="material-icons">remove_circle</i></a>
             </div>
             <div>
                 <input type="email" name="email" id="email">
-                <a class="remove" href=""><i class="material-icons">remove_circle</i></a>
+                <a class="remove"><i class="material-icons">remove_circle</i></a>
             </div>
         </label>
         <div class="controles">
-            <button class="link">Cancelar</button>
-            <button>Adicionar</button>
+            <button (click)="cancelar()" type="button" class="link">Cancelar</button>
+            <button type="button">Adicionar</button>
         </div>
     </form>
 </div>

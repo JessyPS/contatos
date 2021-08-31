@@ -18,10 +18,10 @@ export class MenuComponent implements OnInit {
     console.log("Cliquei para abrir o modal");
     this.onAddContatoClick.emit();
   }
-
+  
   sair(){
     console.log("Pedindo para sair...");
     this.onAddContatoClick.emit();
   }
-
+  
 }
