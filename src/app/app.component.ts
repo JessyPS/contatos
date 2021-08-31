@@ -18,5 +18,4 @@ export class AppComponent {
   ocultarModal(){
     this.mostrandoModal = false;
   }
-
 }
