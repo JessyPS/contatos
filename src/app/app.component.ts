@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'contatos';
+  mostrandoModal = false;
+
+  funcao(){
+    console.log("Eu te escutei, meu filho");
+    this.mostrandoModal = true;
+  }
+
 }
