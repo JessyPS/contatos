@@ -20,7 +20,7 @@ export class ListaDeContatosComponent implements OnInit {
     }
 
     // public get contatos(): Contato[] {
-    //   return this._contatos;
+    //   return this.contatos;
     // }
 
 }

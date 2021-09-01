@@ -65,6 +65,8 @@ const BASE_DE_CONTATOS:Contato[] = [
     }
   ]
 
+const ADD_CONTATO: Contato[] = []
+
 @Injectable({
   providedIn: 'root'
 })
@@ -78,6 +80,10 @@ export class ContatoService {
 
   addContato(c:Contato):void {
     BASE_DE_CONTATOS.push(c)
+    ADD_CONTATO.push(c)
   }
-    
+
+//   addContato(contato: Contato):void {
+//     this.contatos.push(contato)
+// }
 }

@@ -7,15 +7,15 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class CreateContatoComponent implements OnInit {
 
-  @Output() cancelarClick:EventEmitter<null> = new EventEmitter();
+  @Output() onCancelarClick:EventEmitter<null> = new EventEmitter();
 
   constructor() { }
   
   cancelar(){
     console.log("Pedindo pra cancelar")
-    this.cancelarClick.emit();
+    this.onCancelarClick.emit();
   }
-
+ 
   ngOnInit(): void {
   }
 }

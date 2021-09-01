@@ -23,5 +23,4 @@ export class MenuComponent implements OnInit {
     console.log("Pedindo para sair...");
     this.onAddContatoClick.emit();
   }
-  
 }
