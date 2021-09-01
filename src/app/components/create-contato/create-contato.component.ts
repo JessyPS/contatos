@@ -29,4 +29,14 @@ export class CreateContatoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  addTelefone():void {
+    console.log("Só vai!!!");
+    this.novoContato.telefones.push("");
+  }
+
+  removeTelefone(pos:number):void {
+    this.novoContato.telefones.splice(pos, 1);
+  }
+
 }
