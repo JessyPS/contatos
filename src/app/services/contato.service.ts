@@ -2,68 +2,52 @@ import { Injectable } from '@angular/core';
 import { Contato } from '../models/Contato';
 
 const BASE_DE_CONTATOS:Contato[] = [
-
-    {
-      nome:"Thommy Shelby",
-      email: "florjess@teste.com",
-      telefones: ["55555-5555","45787-1333", "78454-1216"],
-    },
-    {
-      nome:"Groot",
-      email: "florjess31@teste.com",
-      telefones: ["32222-5555","54648-4511","48742-0000"]
-    },
-    {
-      nome:"Dr. Estranho",
-      email: "florjess31@teste.com",
-      telefones: ["44444-5555"]
-    },
-    {
-      nome:"Cosima",
-      email: "florjess31@teste.com",
-      telefones: ["11111-5555"]
-    },
-    {
-      nome:"Poly Gray",
-      email: "florjess31@teste.com",
-      telefones: ["99999-5555"]
-    },
-    {
-      nome:"Fernanda Souza",
-      email: "florjess31@teste.com",
-      telefones: ["22222-5555"]
-    },
-    {
-      nome:"Mariah Pereira",
-      email: "florjess31@teste.com",
-      telefones: ["48545-5555"]
-    },
-    {
-      nome:"Bruna Pereira",
-      email: "florjess31@teste.com",
-      telefones: ["44848-5555"]
-    },
-    {
-      nome:"Jessica Pereira",
-      email: "florjess31@teste.com",
-      telefones: ["31313-5555"]
-    },
-    {
-      nome:"Jessica Pereira",
-      email: "florjess31@teste.com",
-      telefones: ["57842-5555"]
-    },
-    {
-      nome:"Jessica Pereira",
-      email: "florjess31@teste.com",
-      telefones: ["335541-5555"]
-    },
-    {
-      nome:"Jessica Pereira",
-      email: "florjess31@teste.com",
-      telefones: ["58755-5555"]
-    }
-  ]
+  {
+    nome: "Mariana Ribeiro 1",
+    email: "mariana@teste.com",
+    telefones: ['1111 - 1111','1111 - 1111','1111 - 1111']
+  },
+  {
+    nome: "Mariana Ribeiro 2",
+    email: "mariana@teste.com",
+    telefones: ['2222 - 2222']
+  },
+  {
+    nome: "Mariana Ribeiro 3",
+    email: "mariana@teste.com",
+    telefones: ['3333 - 3333']
+  },
+  {
+    nome: "Mariana Ribeiro 4",
+    email: "mariana@teste.com",
+    telefones: ['4444 - 4444']
+  },
+  {
+    nome: "Mariana Ribeiro 5",
+    email: "mariana@teste.com",
+    telefones: ['5555 - 5555']
+  },
+  {
+    nome: "Mariana Ribeiro 6",
+    email: "mariana@teste.com",
+    telefones: ['6666 - 6666']
+  },
+  {
+    nome: "Mariana Ribeiro 9",
+    email: "mariana@teste.com",
+    telefones: ['9999 - 9999']
+  },
+  {
+    nome: "Mariana Ribeiro 7",
+    email: "mariana@teste.com",
+    telefones: ['7777 - 7777']
+  },
+  {
+    nome: "Mariana Ribeiro 8",
+    email: "mariana@teste.com",
+    telefones: ['8888 - 8888']
+  },
+]
 
 @Injectable({
   providedIn: 'root'
@@ -73,10 +57,12 @@ export class ContatoService {
   constructor() { }
 
   getContatos():Contato[] {
+    console.log(Math.random())
     return BASE_DE_CONTATOS;
   }
 
-  addContato(c:Contato):void {
-    BASE_DE_CONTATOS.push(c)
+  addContato(c:Contato): void {
+    BASE_DE_CONTATOS.push(c);
   }
+
 }

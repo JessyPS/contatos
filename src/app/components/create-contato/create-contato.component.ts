@@ -1,7 +1,6 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { Contato } from 'src/app/models/Contato';
 import { ContatoService } from 'src/app/services/contato.service';
-import { ContatoComponent } from '../contato/contato.component';
 
 @Component({
   selector: 'app-create-contato',
@@ -11,22 +10,22 @@ import { ContatoComponent } from '../contato/contato.component';
 export class CreateContatoComponent implements OnInit {
 
   @Output() onCancelarClick:EventEmitter<null> = new EventEmitter();
-
+  
   novoContato:Contato = {
     nome:"",
     email:"",
     telefones:[""]
-  } 
+  }
 
   cs:ContatoService = new ContatoService();
 
   constructor() { }
-  
+
   cancelar(){
-    console.log("Pedindo pra cancelar")
-    this.onCancelarClick.emit();
+    console.log("Pediu para candelar");
+    this.onCancelarClick.emit()
   }
- 
+
   track(index:number, value:string){
     return index;
   }
@@ -34,26 +33,27 @@ export class CreateContatoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addTelefone():void {
-    console.log("Só vai!!!");
+  addTelefone():void{
     this.novoContato.telefones.push("");
   }
 
-  removeTelefone(pos:number):void {
-    this.novoContato.telefones.splice(pos, 1);
-  }
-
   salvar(){
-    console.log("Enfim salvando");
     this.cs.addContato(this.novoContato);
-    // Se quiser fazer a tela sumir depois de adicionar o contato
-    // this.onCancelarClick.emit();   
+    
+    // Se quiser fazer a tela sumir depois da de adicionar o contato
+    // this.onCancelarClick.emit();
 
-    // Manter a tela e limpar os campos para a edição do novo contato
-    this.novoContato ={
+    // Manter a tela e limpar os campos para a adição de um novo contato
+    this.novoContato = {
       nome:"",
       email:"",
       telefones:[""]
     }
+
   }
+
+  removeTelefone(pos:number):void{
+    this.novoContato.telefones.splice(pos,1);
+  }
+
 }

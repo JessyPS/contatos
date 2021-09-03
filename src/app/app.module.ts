@@ -25,5 +25,4 @@ import { CreateContatoComponent } from './components/create-contato/create-conta
   providers: [],
   bootstrap: [AppComponent]
 })
-
 export class AppModule { }
